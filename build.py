@@ -28,6 +28,6 @@ build_exe_options = {"includes": ["serial"], "packages": ["serial"],
 setup(
     name = "2D laser engraver",
     version = str(version_num),
-    description = "2D laser engraver.",
+    description = "2D laser engraver control",
     options = {"build_exe": build_exe_options},
     executables = [Executable("script_from_file_GUI.py", base = "Win32GUI", targetName="2D software.exe")])
