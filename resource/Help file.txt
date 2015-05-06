@@ -1,0 +1,18 @@
+This program uses G-code to control a 2D laser engraver.
+
+Select a picture in the BMP format to convert into G-code.
+Menu->Conversion->Convert file...
+
+Open the generated G-code with
+Menu->File->Open G-code
+This will render a preview of the G-code file in the left preview pane.
+
+To Run the G-code file, first select a Com port from
+Menu->Run->COM: X
+Then use
+Menu->Run->Run, to run the file.
+A live view of the G-code running is shown in the instant pane.
+To simulate the G-code running, simply use Menu->Run->Run without selecting a Com port.
+
+Supported image formats:
+BMP, EPS, GIF, IM, JPEG, JPEG2000, MSP, PCX, PNG, PPM, SPIDER, TIFF, WedP, XBM, CUR, DCX, FLI, FLC, FPX, GBR, GD, ICO, ICNS, IMT, IPTC/NAA, MCIDAS, MPO, PCD, PSD, SGI, TGA, WAL, XPM.
