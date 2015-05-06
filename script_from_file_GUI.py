@@ -326,7 +326,10 @@ class Window(tkinter.Frame):
     def menu_quit(self):
         """Stop Parse_Com_Thread and periodic self.__check_queue() ."""
         self.exit = True
-        self.out_queue.put("exit")
+        try:
+            self.out_queue.put("exit")
+        except:
+            pass
         self.root.destroy()
     
     def __menu_open_gcode(self):
